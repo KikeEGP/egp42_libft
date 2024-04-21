@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 15:22:29 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/19 20:46:03 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/21 17:03:42 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(void)
 
 	printf("Mira el dest: %s\n", dest);
 	printf("Mira el origen: %s\n", origen);
-	int cpy = ft_strlcat(dest, origen, 16);
+	int cpy = strlcat(dest, origen, 17);
 	printf("Mira lo que pasa con dest: %s\n", dest);
 	printf("Contó %d, copied %lu y pesa %lu\n", cpy, strlen(dest), sizeof(dest));
 	return (0);

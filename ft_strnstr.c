@@ -6,13 +6,13 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 17:26:44 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/21 22:00:30 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/22 20:58:13 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-const char	*srch_loop(const char *h, const char *n, size_t i)
+static const char	*srch_loop(const char *h, const char *n, size_t i)
 {
 	while (*h == *n && i != 0 && (*n != '\0' || *h != '\0'))
 	{

@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 19:00:16 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/20 17:45:29 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/22 14:21:13 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h> //FOR TESTS. DELETE BEFORE SEND TO EVALUATION ?
 # include <ctype.h> // May I delete this too?
 # include <string.h>
+# include <stdlib.h> //For malloc() and free()
 
 //Part 1 - Libc Functions
 //ctype.h functions 

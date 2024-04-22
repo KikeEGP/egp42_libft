@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 20:16:56 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/02 17:11:55 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/22 22:22:29 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,32 +16,44 @@
 /*void *b expects us to assign a var type to it. That's casting. look at w*/
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t			n;
-	unsigned char	*w;
+	unsigned char	*v;
+	size_t			i;
 
-	n = 0;
-	w = (unsigned char *)b;
-	while (w[n] != '\0')
-		n++;
-	if (n < len)
+	i = 0;
+	v = (unsigned char *)b;
+	while (i < len)
 	{
-		while (n < len)
-		{
-			w[n] = (unsigned char) c;
-			n++;
-		}
+		v[i] = (unsigned char)c;
+		i++;
 	}
 	return (b);
 }
 /*
 int	main(void)
 {
-	char	text[3]; //if len > size of b, memset doesn't compile. 
-//How can I do that too?
+	char	text[11]; 
 
-	memset(text, 'H', 5);
-	printf("memset hace que el string sea %s\n",text);	
-	ft_memset(text, 'H', 5);
-	printf("ft_memset hace que el string sea %s\n",text);	
+	ft_memset(text, 'l', sizeof(text));
+	printf("%s\n",text);	
+	ft_memset(text, 'H', 1);
+	printf("%s\n",text);	
+	ft_memset(text+4, 'o', 4);
+	printf("%s\n",text);
+	ft_memset(text+10, 'd', 1);
+	printf("%s\n",text);
+	ft_memset(text+10, 'd', 1);
+	printf("%s\n",text);
+	ft_memset(text+5, 32, 1);
+	printf("%s\n",text);
+	ft_memset(text+6, 'W', 1);
+	printf("%s\n",text);
+	ft_memset(text+1, 'e', 1);
+	printf("%s\n",text);
+	ft_memset(text+8, 'r', 1);
+	printf("%s\n",text);
+	ft_memset(text, '%', sizeof(text));
+	printf("%s\n",text);
+	ft_memset(text, 32, sizeof(text));
+	printf("%s",text);	
 	return (0);
 }*/

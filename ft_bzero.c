@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 20:35:59 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/03/26 21:23:56 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/22 22:27:10 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,14 @@ int	main(void)
 {
 	char	text[20];
 
-	ft_bzero(text, 0);
+	ft_bzero(text, sizeof(text));
 	printf("String aparece como %s\n", text);
 	ft_memset(text, 'A', 10);
 	printf("String aparece como %s\n", text);
-	ft_memset(text, 'B', 10);
+	ft_memset(text+10, 'B', 10);
 	printf("String aparece como %s\n", text);
+	ft_bzero(text, sizeof(text));
+	printf("String aparece como %s\n", text);
+
 	return (0);
-}*//*So, I can use ft_bzero in an empty array, but not in one with values...
-	 WHY????*/
+}*/

@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:29:00 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/22 23:06:19 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/23 20:35:54 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strrchr(const char *s, int c)
 {
 	const char	*aux;
 
+	if (!*s)
+		return (0);
 	while (*s)
 	{
 		if (*s == (char)c)

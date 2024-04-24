@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 19:00:16 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/23 22:33:07 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/24 21:32:06 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strdup(const char *s1);
-//								stdlib.h function
+//								stdlib.h functions
+int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t	size);
 //Part 2 - Additional Functions
 void	ft_putchar_fd(char c, int fd);

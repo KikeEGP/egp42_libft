@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 18:26:39 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/11 17:01:51 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:54:31 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,20 @@
 
 size_t	ft_strlen(const char *str)
 {
+	size_t count;
+
+	count = 0;
+	while (*str != '\0')
+	{
+		str++;
+		count++;
+	}
+	return (count);
+}
+
+
+
+/*{
 	size_t	i;
 
 	i = 0;
@@ -22,7 +36,7 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-/*
+
 int	main(void)
 {
 	const char*	text;

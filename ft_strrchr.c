@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:29:00 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/23 20:35:54 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/24 14:25:38 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char	*aux;
+	int	i;
 
-	if (!*s)
-		return (0);
-	while (*s)
-	{
-		if (*s == (char)c)
-			aux = s;
-		s++;
-	}
+	i = ft_strlen(s);
 	if ((char)c == '\0')
-		return ((char *)s);
-	return ((char *)aux);
+		return ((char *)&s[i]);
+
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);	
+		i--;
+	}
+	return (0);
 }
 /*
 int	main(void)
@@ -36,8 +36,8 @@ int	main(void)
 	char*	myresult;
 	char*	result;
 
-	string = "\0";
-	l = 'a';
+	string = "He\0llo";
+	l = '\0';
 	myresult = ft_strrchr(string, l);
 	result = strrchr(string, l);
 	printf("String is: %s\n", string);

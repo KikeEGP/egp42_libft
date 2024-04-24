@@ -6,7 +6,7 @@
 /*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:34:50 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/23 23:10:47 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/24 12:56:05 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (len == 0 || ft_strlen(s) > (size_t)start)
 	   return (0);	
 	sub = (char *)malloc(len * sizeof(char));
-
+	return (0);
+}
 

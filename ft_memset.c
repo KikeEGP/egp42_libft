@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/21 20:16:56 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/22 22:22:29 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:58:48 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 17:59:17 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 /*man calls void *b, but I saw in other examples calling it "dest"*/
 /*void *b expects us to assign a var type to it. That's casting. look at w*/
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*v;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/20 22:12:10 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/03/21 16:23:30 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:18:10 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 17:32:59 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@ int	ft_isalnum(int c)
 /*
 int	main(void)
 {
-	char	alflet;
+	char	alnum;
 
-	alflet = '/';
-	printf("El char alflet %c tiene el valor %i\n", alflet, ft_isalnum(alflet));
-	alflet = '6';
-	printf("El char alflet %c tiene el valor %i\n", alflet, ft_isalnum(alflet));
-	alflet = 'A';
-	printf("El char alflet %c tiene el valor %i\n", alflet, ft_isalnum(alflet));
-	alflet = ' ';
-	printf("El char alflet %c tiene el valor %i\n", alflet, ft_isalnum(alflet));
-	alflet = '*';
-	printf("El char alflet %c tiene el valor %i\n", alflet, ft_isalnum(alflet));
+	alnum = '/';
+	printf("Char alnum %c has value %i\n", alnum, ft_isalnum(alnum));
+	alnum = '6';
+	printf("Char alnum %c has value %i\n", alnum, ft_isalnum(alnum));
+	alnum = 'A';
+	printf("Char alnum %c has value %i\n", alnum, ft_isalnum(alnum));
+	alnum = ' ';
+	printf("Char alnum %c has value %i\n", alnum, ft_isalnum(alnum));
+	alnum = '*';
+	printf("Char alnum %c has value %i\n", alnum, ft_isalnum(alnum));
 	
 	return (0);
 }*/

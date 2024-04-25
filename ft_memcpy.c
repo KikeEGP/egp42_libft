@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/26 21:34:34 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/09 20:32:56 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:26:01 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 17:54:03 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char	o[] = "Hello";
 	char	d[] = "Hola";
 	num = 2;
-	printf("el valor de o es %s y el de d es %s\n", o, d);
+	printf("Value of o is %s and for d is %s\n", o, d);
 	ft_memcpy(d, o, num);
-	printf("El valor de d es %s\n", d);
+	printf("New d value is %s\n", d);
 	return (0);
 }*/

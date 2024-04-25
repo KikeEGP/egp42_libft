@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 15:22:29 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/21 17:03:42 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 18:03:22 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 18:07:48 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 int	main(void)
 {
 	char	dest[15] = "Hola";
-	char	origen[] = "Mundo";
+	char	origin[] = "Mundo";
 
-	printf("Mira el dest: %s\n", dest);
-	printf("Mira el origen: %s\n", origen);
-	int cpy = strlcat(dest, origen, 17);
-	printf("Mira lo que pasa con dest: %s\n", dest);
-	printf("Contó %d, copied %lu y pesa %lu\n", cpy, strlen(dest), sizeof(dest));
+	printf("Dest is: %s\n", dest);
+	printf("Origin is: %s\n", origin);
+	int cpy = strlcat(dest, origin, 17);
+	printf("Look what happened to dest: %s\n", dest);
+	printf("Count %d, copied %lu,size %lu\n", cpy, strlen(dest), sizeof(dest));
 	return (0);
 }*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/21 18:26:39 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/24 13:54:31 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:36:20 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 18:13:09 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,6 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t count;
-
-	count = 0;
-	while (*str != '\0')
-	{
-		str++;
-		count++;
-	}
-	return (count);
-}
-
-
-
-/*{
 	size_t	i;
 
 	i = 0;
@@ -36,7 +22,7 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
+/*
 int	main(void)
 {
 	const char*	text;

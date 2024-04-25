@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/20 20:08:25 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/03/21 15:41:32 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:18:44 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 17:35:07 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
 
 int	ft_isalpha(int c)
 {
@@ -25,9 +24,9 @@ int	main(void)
 	char	*text;
 
 	text = "d";
-	printf("ft_isalpha sobre %s\n", text);
-	printf("nos devuelve un valor de %i\n\n", ft_isalpha(*text));
-	printf("isalpha sobre %s\n", text);
-	printf("nos devuelve un valor de %i", isalpha(*text));
+	printf("ft_isalpha applied to %s\n", text);
+	printf("returns value %i\n\n", ft_isalpha(*text));
+	printf("isalpha applied to %s\n", text);
+	printf("returns value %i", isalpha(*text));
 	return (0);
 }*/

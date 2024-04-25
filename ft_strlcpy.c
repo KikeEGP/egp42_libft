@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/05 23:30:02 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/23 19:54:32 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 18:07:58 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 18:11:35 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ int	main(void)
 	char	dest[] = "Patatas";
 	char	origen[] = "Hola";
 
-	printf("Mira el dest: %s\n", dest);
+	printf("Look at dest: %s\n", dest);
 	int cpy = ft_strlcpy(dest, origen, 4);
-	printf("Mira lo que pasa con dest: %s\n", dest);
-	printf("Copió %d, mide %lu y pesa %lu\n", cpy, strlen(dest), sizeof(dest));
+	printf("Now look what happened to dest: %s\n", dest);
+	printf("Copy %d, length %lu and size %lu\n", cpy, strlen(dest), sizeof(dest));
 	return (0);
 }*/

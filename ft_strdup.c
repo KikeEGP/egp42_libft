@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 20:27:52 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/24 21:22:16 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:44:19 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 18:02:57 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *s1)
 	char	*s1_copy;
 	size_t	i;
 
-	s1_copy = (char	*)malloc((ft_strlen(s1) + 1) * sizeof(char));
+	s1_copy = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
 	if (!s1_copy)
 		return (0);
 	i = 0;

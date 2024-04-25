@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 18:57:37 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/09 20:26:17 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:58:01 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 17:58:22 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ int	main(void)
 {
 	size_t	n;
 
-	char final[] = "Patata";
-	char origen[] = "Hello there";
+	char end[] = "Patata";
+	char origin[] = "Hello there";
 	n = 5;
-	printf("Mira, final es %s y origen es %s\n", final, origen);
-	printf("El final es %s\n", final);
-	printf("Mi int es %hhi\n", final[3]);
-	ft_memmove(final+1, origen, n);
-	printf("Y ahora final es %s\n", final);
+	printf("Look, end is %s and origin is %s\n", end, origin);
+	printf("El end is %s\n", end);
+	printf("My int is %hhi\n", end[3]);
+	ft_memmove(end+1, origin, n);
+	printf("And now end is %s\n", end);
 	return (0);
 }*/

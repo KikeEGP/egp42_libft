@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enrgil-p <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/21 15:05:30 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/03/21 15:35:12 by enrgil-p         ###   ########.fr       */
+/*   Created: 2024/04/25 17:19:12 by enrgil-p          #+#    #+#             */
+/*   Updated: 2024/04/25 17:46:32 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
 
 int	ft_isascii(int c)
 {
@@ -25,20 +24,20 @@ int	main(void)
 		char	car;
 
 	car = '/';
-	printf("El char car %c devuelve %i\n", car, ft_isascii(car));
+	printf("Char car %c returns %i\n", car, ft_isascii(car));
 	car = '6';
-	printf("El char car %c devuelve %i\n", car, ft_isascii(car));
+	printf("Char car %c returns %i\n", car, ft_isascii(car));
 	car = 'A';
-	printf("El char car %c devuelve %i\n", car, ft_isascii(car));
+	printf("Char car %c returns %i\n", car, ft_isascii(car));
 	car = ' ';
-	printf("El char car %c devuelve %i\n", car, ft_isascii(car));
+	printf("Char car %c returns %i\n", car, ft_isascii(car));
 	car = '*';
-	printf("El char car %c devuelve%i\n\n", car, ft_isascii(car));
+	printf("Char car %c returns%i\n\n", car, ft_isascii(car));
 	car = 0;
-	printf("El char car nul %c devuelve %i\n", car, ft_isascii(car));
+	printf("Char car nul %c returns %i\n", car, ft_isascii(car));
 	car = 0;
-	printf("El char car nul %c debe devolver  %i\n\n", car, isascii(car));	
+	printf("Char car nul %c should return  %i\n\n", car, isascii(car));	
 	car = 127;
-	printf("El char car %c devuelve %i\n", car, ft_isascii(car));
+	printf("Char car %c returns %i\n", car, ft_isascii(car));
 	return (0);
 }*/

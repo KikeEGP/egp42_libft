@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:58:01 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 17:58:22 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/28 14:32:28 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*s;
 	char	*d;
-	size_t	i;
 
 	s = (char *)src;
 	d = (char *)dst;
-	i = 0;
 	if (d > s)
 	{
 		while (len--)
@@ -39,8 +37,7 @@ int	main(void)
 	char origin[] = "Hello there";
 	n = 5;
 	printf("Look, end is %s and origin is %s\n", end, origin);
-	printf("El end is %s\n", end);
-	printf("My int is %hhi\n", end[3]);
+	printf("The end is %s\n", end);
 	ft_memmove(end+1, origin, n);
 	printf("And now end is %s\n", end);
 	return (0);

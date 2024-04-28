@@ -6,31 +6,42 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:15:13 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 23:53:36 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/04/26 22:25:10 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-/*int	ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int		result;
-	size_t	i;
-	
-	if (!((*str >= 48 && *str <= 57) || (*str != 43 || *str != 45)))
-		return (0);
-	while (!(str[i] >= 48 && *str[i] <= 57))
-		return (0);
-	result = str - 48;
-	return (result);
-}*/
+	int	result;
+	int	sign;
 
+	result = 0;
+	sign = 1;
+	while (*str == '\t' || *str == '\n' || *str == '\v' || *str == '\f'
+		|| *str == '\r' || *str == ' ')
+		str++;
+	if (*str == '-' || *str == '+')
+	{
+		sign = 1 - 2 * (*str == '-');
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+		result = 10 * result + (*str++ - '0');
+	return (result * sign);
+}
+/*
 int main(void)
 {
     char  *text;
     int   num;
-
-    text = "-9223372036854775808";
-    num = atoi(text);
-	printf("Num is %d", num);
-    return (0);
-}
+    int   num_expected;
+    
+    text = "   \n  +33_42";
+    num_expected = atoi(text);
+    num = ft_atoi(text);
+	printf("\nString is: %s.\n\n", text);
+	printf("Expected was: %d;\nMy result is: %d.\n", num_expected, num);
+	return (0);
+}*/

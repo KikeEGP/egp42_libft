@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:58:01 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 17:58:22 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/05 00:55:25 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*s;
 	char	*d;
-	size_t	i;
 
 	s = (char *)src;
 	d = (char *)dst;
-	i = 0;
 	if (d > s)
 	{
 		while (len--)

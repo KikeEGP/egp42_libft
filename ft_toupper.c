@@ -6,13 +6,12 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:24:18 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 18:24:31 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/05 01:31:06 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*I can´t use original toupper with unsigned chars, or at least, with ñ.
- * Could my ft_toupper do it?*/
+
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)

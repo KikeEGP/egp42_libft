@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/05 20:26:12 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/05 21:11:08 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/05 21:15:13 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static size_t	find_occurr(char const *str, char c)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == c)
+		if (str[i++] == c)
 			n++;
 	}
 	return (n);

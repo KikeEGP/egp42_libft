@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/05 20:26:12 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/06 21:49:03 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/07 21:40:36 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static size_t	find_occurr(char const *str, char c, size_t n)
 	j = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i++] == c && j != i && i != ft_strlen(str) - 1)
+		if (str[i] == c && j != i && i != ft_strlen(str) - 1)
 		{
 			j = i + 1;
 			n++;
@@ -56,7 +56,7 @@ static char	**c_occurr(char **result, char const *str, char c, size_t n)
 	size_t	start;
 
 	i = 0;
-	(unsigned int)start = i;
+	start = i;
 	j = 0;
 	while (*str && j < n)
 	{
@@ -72,6 +72,7 @@ static char	**c_occurr(char **result, char const *str, char c, size_t n)
 			start++;
 		i++;
 	}
+	return (result);
 }
 
 char	**ft_split(char const *s, char c)
@@ -87,9 +88,9 @@ char	**ft_split(char const *s, char c)
 		if (!array)
 			return (0);
 		else if (n_ptr == 1)
-			array = no_occurr(s);
+			array = no_occurr(array, s);
 		else if (n_ptr > 1)
-			array = c_occurr(s, c, n_ptr);
+			array = c_occurr(array, s, c, n_ptr);
 		return (array);
 	}
 	return (0);

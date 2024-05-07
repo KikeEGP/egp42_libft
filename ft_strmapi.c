@@ -6,13 +6,13 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 23:15:15 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/05 01:26:30 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/07 18:38:10 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*str;
 	size_t	len;
@@ -35,16 +35,19 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (0);
 }
 /*
+char	*alpha_upper(unsigned int i, char str)
+{
+	while (ft_isalpha(str) && (!(str >= 65 && str <= 90)))
+		str -= 32;
+	return &str;
+}
+
 int	main(void)
 {
-	char	*str;
 	char	*new;
-	unsigned int	i;
-
-	str = "Hello World";
+	char	str[20] = "Hello World";
 	printf("%s\n\n", str);
-	i = 0;
-	new = ft_strmapi(str, str[i](ft_toupper));
+	new = ft_strmapi(str, alpha_upper);
 	printf("%s\n", new);
 	free(new);
 }*/

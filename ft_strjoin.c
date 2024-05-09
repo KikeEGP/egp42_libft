@@ -42,7 +42,7 @@ int	main(void)
 {
 	char const	*text_1;
 	char const	*text_2;
-	char const	*merge;
+	char	*merge;
 
 	text_1 = "Capi";
 	text_2 = "cua";

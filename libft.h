@@ -13,11 +13,12 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
-# include <stdio.h> //FOR TESTS. DELETE BEFORE SEND TO EVALUATION ?
-# include <ctype.h> // May I delete this too?
+# include <unistd.h> //For write()
+# include <stdio.h> 
+# include <ctype.h> 
 # include <string.h>
 # include <stdlib.h> //For malloc() and free()
+# include <stdint.h> //For SIZE_MAX
 
 //		Part 1 - Libc Functions
 //								ctype.h functions 
@@ -47,16 +48,19 @@ char	*ft_strdup(const char *s1);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t	size);
 //Part 2 - Additional Functions
+//                              write functions
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+//                              malloc functions
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+//                              this one is forever alone
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif

@@ -16,18 +16,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*str;
 	size_t	len;
-	unsigned int	i;
+	size_t	i;
 
 	if (!s || !f)
 		return (0);
 	len = ft_strlen(s);
 	str = ft_calloc(len + 1, sizeof(char));
-	if (*str)
+	if (str != NULL)
 	{
 		i = 0;
 		while (s[i] != '\0')
 		{
-			str[i] = f(i, s[i]);
+			str[i] = f((unsigned int)i, s[i]);
 			i++;
 		}
 		return (str);
@@ -35,19 +35,20 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (0);
 }
 /*
-char	*alpha_upper(unsigned int i, char str)
+char	alpha_upper(unsigned int i, char str)
 {
-	while (ft_isalpha(str) && (!(str >= 65 && str <= 90)))
+	if (ft_isalpha(str) && (!(str >= 65 && str <= 90)))
 		str -= 32;
-	return &str;
+	return (str);
 }
 
 int	main(void)
 {
-	char	*new;
 	char	str[20] = "Hello World";
 	printf("%s\n\n", str);
-	new = ft_strmapi(str, alpha_upper);
+	char	*new = ft_strmapi(str, alpha_upper);
 	printf("%s\n", new);
 	free(new);
+	printf("Memory dellocated");
+	return (0);
 }*/

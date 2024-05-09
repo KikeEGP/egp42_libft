@@ -25,7 +25,7 @@ int	main(void)
 	printf("String aparece como %s\n", text);
 	ft_memset(text, 'A', 10);
 	printf("String aparece como %s\n", text);
-	ft_memset(text+10, 'B', 10);
+	ft_memset(text + 10, 'B', 10);
 	printf("String aparece como %s\n", text);
 	ft_bzero(text, sizeof(text));
 	printf("String aparece como %s\n", text);

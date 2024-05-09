@@ -31,13 +31,27 @@ void	*ft_memchr(const void *s, int c, size_t n)
 /*
 int	main(void)
 {
-	char*	src;
-	char*	ptr;
-	char	l;
+	int	*ptr1;
+	int	*ptr2;
+	int	looking;
 
-	src = "Hello World";
-	l = 'l';
-	ptr = ft_memchr(src, l, 5);
-	printf("ptr is %s\n", ptr);
+	int	src[2][2] = {{24, 53}, {17, 42}};
+	looking = 42;
+	ptr1 = ft_memchr(&src, looking, 12);
+	ptr2 = ft_memchr(&src, looking, 13);
+	if(ptr1)
+		{
+			ft_putendl_fd("ptr1 found", 1);
+			ft_putnbr_fd(ptr1[0], 1);
+			ft_putstr_fd("\n\n", 1);
+		}
+	if(ptr2)
+	{
+		ft_putendl_fd("ptr2 found", 1);
+		ft_putnbr_fd(ptr2[0], 1);
+		ft_putstr_fd("\n\n", 1);
+	}
+	else
+		ft_putendl_fd("pointers not found", 1);
 	return (0);
 }*/

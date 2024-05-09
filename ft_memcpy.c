@@ -33,9 +33,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*I cannot execute main wit a var declaration following the Norme.
- * Somebody once told me to use strup*/
-/*int	main(void)
+/*
+int	main(void)
 {
 	size_t	num;
 

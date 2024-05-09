@@ -20,9 +20,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (s1 && s2)
 	{
-		if (*s1 && !s2)
+		if (s1 && !s2)
 			return (ft_strdup(s1));
-		if (!s1 && *s2)
+		if (!s1 && s2)
 			return (ft_strdup(s2));
 		s3_len = (ft_strlen(s1) + ft_strlen(s2)) + 1;
 		s3 = ft_calloc (s3_len, sizeof(char));

@@ -17,7 +17,7 @@ char	*ft_strdup(const char *s1)
 	char	*s1_copy;
 	size_t	i;
 
-	s1_copy = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
+	s1_copy = malloc((ft_strlen(s1) + 1) * sizeof(char));
 	if (!s1_copy)
 		return (0);
 	i = 0;
@@ -36,7 +36,7 @@ int main(void)
 	char  *copy;
 	
 	string = "Hello World";
-	printf("String is: %s.\n\r Now we are gonna copy it.\n\n", string);
+	printf("String is: %s.\nNow we are gonna copy it.\n\n", string);
 	copy = ft_strdup(string);
 	printf("Here is the copy: %s.\n", copy);
 	free(copy);

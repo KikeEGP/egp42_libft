@@ -32,9 +32,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 int	main(void)
 {
 	size_t	n;
-
-	char end[] = "Patata";
-	char origin[] = "Hello there";
+	
+	char	end[30] = "Patata";
+	char	origin[12] = "Hello there";
 	n = 5;
 	printf("Look, end is %s and origin is %s\n", end, origin);
 	printf("El end is %s\n", end);

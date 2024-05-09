@@ -25,18 +25,21 @@ void	*ft_calloc(size_t count, size_t	size)
 /*
 int	main(void)
 {
-int    *num;
+    int *num;
     int i;
     int j;
  
-    i = 10;
+    i = 5;
     num = ft_calloc(i, sizeof(int));
     num[0] = 42;
-    num [8]  = 23;
+    num [3] = 23;
+    num[4] = &num[3] - &num[0];
     j = 0;
     while (j < i)
     {
-        printf("num: %d\n", num[j]);
+        ft_putendl_fd("Integers of num array", 1);
+        ft_putnbr_fd(num[j], 1);
+        ft_putchar_fd('\n', 1);
         printf("sizeof: %lu\n\n", sizeof(*num));
         j++;
     }

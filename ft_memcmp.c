@@ -37,8 +37,11 @@ int	main(void)
 	int	myresult;
 	int	expected;
 
-	char*	str1 = "Jello";
-	char*	str2 = "Hellp";
+	char*	str1; 
+	str1= "rggsrhs";
+	//str1 = gñdsgd;
+	char*	str2;
+	str2= "nxhjfgjfj";
 	myresult = ft_memcmp(str1, str2, 5);
 	expected = memcmp(str1, str2, 5);
 	printf("Myresult: Strs differ %d. Expected: %d\n", myresult, expected);

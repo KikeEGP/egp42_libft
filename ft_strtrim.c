@@ -56,45 +56,44 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (0);
-	if (*s1 && !set)
+	if (s1 && !set)
 		return (ft_strdup(s1));
 	forw_i = 0;
 	rev_i = ft_strlen(s1) - 1;
 	forw_i = srch_forward(s1, set, forw_i);
-	if (forw_i > rev_i)
-		return (0);
-	rev_i = srch_reverse(s1, set, rev_i);
+	if (forw_i <= rev_i)
+		rev_i = srch_reverse(s1, set, rev_i);
 	result = ft_calloc((rev_i - forw_i) + 2, sizeof(char));
 	if (!result)
 		return (0);
 	result = ft_memcpy(result, &s1[forw_i], (rev_i - forw_i) + 1);
 	return (result);
 }
-
+/*
 int	main(void)
 {
 	char	*text;
 	char	*del;
 	char	*cleaned;
-	int	cmp_result;
 
-	text = "Hola";
-	del = "alHol";
+	text = "";
+	del = "Hola";
 	cleaned = ft_strtrim(text, del);
 	if (!cleaned)
 		return (printf("Function retruned (null)"));
-	cmp_result = ft_strncmp(cleaned, text, ft_strlen(text));
-	printf("%d\n\n", cmp_result);
+
 	printf("%s\n", text);
 	printf("%s\n", cleaned);
-		if (cmp_result == 0)
+	if (ft_strncmp(cleaned, text, ft_strlen(text)))
+	{
+		printf("Extracted %s from %s", cleaned, text);
+		printf("%lu", sizeof(cleaned));
+	}
+	else
 	{
 		printf("No char deleted at %s\n", text);
 		printf("Result of function is: %s\n", cleaned);
 	}
-	if (cmp_result > 0 || cmp_result < 0)
-		printf("Extracted %s from %s", cleaned, text);
-	
 	free(cleaned);
 	return (0);
-}
+}*/

@@ -6,31 +6,31 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/05 20:26:12 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/07 21:40:36 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/08 21:25:42 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	find_occurr(char const *str, char c, size_t n)
+static size_t	count_words(char const *str, char c, size_t num_words)
 {
 	size_t	i;
-	size_t	j;
+	size_t	c_skip;
 
 	i = 0;
-	j = 0;
+	c_skip = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == c && j != i && i != ft_strlen(str) - 1)
+		if (str[i] == c && c_skip != i && i != ft_strlen(str) - 1)
 		{
-			j = i + 1;
-			n++;
+			c_skip = i + 1;
+			num_words++;
 		}
-		else if (str[i] == c && j == i)
-			j++;
+		else if (str[i] == c && c_skip == i)
+			c_skip++;
 		i++;
 	}
-	return (n);
+	return (num_words);
 }
 
 static char	**memerror(char **array, size_t n)
@@ -58,7 +58,7 @@ static char	**c_occurr(char **result, char const *str, char c, size_t n)
 	i = 0;
 	start = i;
 	j = 0;
-	while (*str && j < n)
+	while (str && j < n)
 	{
 		if ((str[i] == c || str[i] == '\0') && i != start)
 		{
@@ -80,10 +80,10 @@ char	**ft_split(char const *s, char c)
 	char	**array;
 	size_t	n_ptr;
 
-	if (*s)
+	if (s)
 	{
 		n_ptr = 1;
-		n_ptr = find_occurr(s, c, n_ptr);
+		n_ptr = count_words(s, c, n_ptr);
 		array = ft_calloc(n_ptr + 1, sizeof(char *));
 		if (!array)
 			return (0);
@@ -95,3 +95,18 @@ char	**ft_split(char const *s, char c)
 	}
 	return (0);
 }
+/*int	main(void)
+{
+	char	**result;
+	char	*string;
+	char	*searched;
+	size_t	i;
+
+	string = "Madrid,Barcelona,Valencia,Sevilla,Zaragoza,Málaga,Bilbao,León";
+	result = ft_split(string, ',');
+	i = 0;
+	while (result[i])
+		ft_putendl_fd(result[i++], 1);
+	free(result);
+	return (0);
+}*/

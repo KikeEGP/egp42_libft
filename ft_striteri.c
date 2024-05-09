@@ -16,7 +16,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
-	if (*s && *f)
+	if (s && f)
 	{
 		i = 0;
 		while (s[i] != '\0')
@@ -36,7 +36,6 @@ void	my_ft(unsigned int i, char *str)
 		num = num / 2;
 		str[i] = num + '0';
 	}
-
 }
 
 int	main(void)

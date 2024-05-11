@@ -39,8 +39,8 @@ int main(void)
     int   num_expected;
     
     text = "   \n  +33_42";
-    num_expected = atoi(text);
-    num = ft_atoi(text);
+    num_expected = atoi(NULL);
+    num = ft_atoi(NULL);
 	printf("\nString is: %s.\n\n", text);
 	printf("Expected was: %d;\nMy result is: %d.\n", num_expected, num);
 	return (0);

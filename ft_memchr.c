@@ -19,6 +19,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
 
+	if (!s)
+		return (0);
 	i = 0;
 	while (i < n)
 	{
@@ -37,8 +39,8 @@ int	main(void)
 
 	int	src[2][2] = {{24, 53}, {17, 42}};
 	looking = 42;
-	ptr1 = ft_memchr(&src, looking, 12);
-	ptr2 = ft_memchr(&src, looking, 13);
+	ptr1 = ft_memchr(src, looking, 12);
+	ptr2 = ft_memchr(src, looking, 13);
 	if(ptr1)
 		{
 			ft_putendl_fd("ptr1 found", 1);

@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:24:42 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/01 21:45:06 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/11 22:48:40 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h> //For write()
-# include <stdio.h> 
-# include <ctype.h> 
-# include <string.h>
 # include <stdlib.h> //For malloc() and free()
 # include <stdint.h> //For SIZE_MAX
 

@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 13:45:57 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/07 17:31:50 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/14 19:46:12 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s3_len;
 	size_t	s1_len;
 
-	if (s1 && s2)
+	if (s1 || s2)
 	{
 		if (s1 && !s2)
 			return (ft_strdup(s1));
@@ -44,7 +44,7 @@ int	main(void)
 	char const	*text_2;
 	char	*merge;
 
-	text_1 = "Capi";
+	text_1 = "\0Capi";
 	text_2 = "cua";
 	printf("Texts are '%s' and '%s'\n", text_2, text_1);
 	merge = ft_strjoin(text_1, text_2);

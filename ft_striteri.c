@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 21:41:28 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/05 01:23:53 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/13 15:23:52 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
+	i = 0;
 	if (s && f)
 	{
-		i = 0;
-		while (s[i] != '\0')
-			f(i++, s);
+		while (s[i])
+		{
+			f(i, &s[i]);
+			i++;
+		}
 	}
 }
 /*

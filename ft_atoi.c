@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:15:13 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/26 22:25:10 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/13 14:26:30 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ int	ft_atoi(const char *str)
 
 	result = 0;
 	sign = 1;
-	while (*str == '\t' || *str == '\n' || *str == '\v' || *str == '\f'
-		|| *str == '\r' || *str == ' ')
+	while ((*str >= 9 && *str <= 13) || *str == 32)
 		str++;
 	if (*str == '-' || *str == '+')
 	{
@@ -39,8 +38,8 @@ int main(void)
     int   num_expected;
     
     text = "   \n  +33_42";
-    num_expected = atoi(NULL);
-    num = ft_atoi(NULL);
+    num_expected = atoi(text);
+    num = ft_atoi(text);
 	printf("\nString is: %s.\n\n", text);
 	printf("Expected was: %d;\nMy result is: %d.\n", num_expected, num);
 	return (0);

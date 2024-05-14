@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:16:26 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/11 23:51:26 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/13 14:17:14 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-		ft_memset(s, '\0', n);
+	ft_memset(s, '\0', n);
 }
 /*
 int	main(void)

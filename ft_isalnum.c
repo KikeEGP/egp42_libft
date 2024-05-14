@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:18:10 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 17:32:59 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/13 14:16:51 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	return (ft_isdigit(c) || ft_isalpha(c));
 }
 /*
 int	main(void)

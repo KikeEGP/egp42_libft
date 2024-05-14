@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:07:58 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 18:11:35 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/13 20:43:35 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ int	main(void)
 	printf("Look at dest: %s\n", dest);
 	int cpy = ft_strlcpy(dest, origen, 4);
 	printf("Now look what happened to dest: %s\n", dest);
-	printf("Copy %d, length %lu and size %lu\n", cpy, strlen(dest), sizeof(dest));
+	printf("Cp %d, len %lu and sz %lu\n", cpy, strlen(dest), sizeof(dest));
 	return (0);
 }*/

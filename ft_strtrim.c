@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 22:38:16 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/07 22:16:16 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:03:46 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (0);
-	if (s1 && !set)
+	if (!set)
 		return (ft_strdup(s1));
 	forw_i = 0;
 	rev_i = ft_strlen(s1) - 1;

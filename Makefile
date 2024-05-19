@@ -6,7 +6,7 @@
 #    By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/25 17:15:51 by enrgil-p          #+#    #+#              #
-#    Updated: 2024/05/09 20:18:58 by enrgil-p         ###   ########.fr        #
+#    Updated: 2024/05/15 14:07:31 by enrgil-p         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ all: $(NAME)
 #						(tab) recipe
 
 $(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS) 	
+	ar rc $(NAME) $(OBJS) 	
 	$(info CREATED $(NAME))	
 #	First time I had put an -MD before $(CFLAGS, above). 
 #	This modifier creates *.d, which explains a file dependencies	

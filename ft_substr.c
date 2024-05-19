@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:23:03 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/11 22:47:44 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:08:12 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (s)
 	{
-		s_len = 0;
 		s_len = ft_strlen(s);
 		i = 0;
 		while (i < start)
 			i++;
-		if (start > ft_strlen(s))
+		if (start > s_len)
 			len = 0;
 		else if ((len + start) >= s_len)
 			len = s_len - start;

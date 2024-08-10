@@ -6,12 +6,17 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 13:45:57 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/05/14 19:46:12 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/08/10 16:18:54 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+ *
+ * YOU COULD CHANGE THIS FUNCTION IN ORDER TO OPTIMIZE IT.
+ * Instead the last loop, return s3-s1_len
+ *
+ * */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s3;

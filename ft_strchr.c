@@ -6,7 +6,7 @@
 /*   By: enrgil-p <enrgil-p@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:02:12 by enrgil-p          #+#    #+#             */
-/*   Updated: 2024/04/25 18:02:35 by enrgil-p         ###   ########.fr       */
+/*   Updated: 2024/08/04 20:51:07 by enrgil-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,15 @@ int	main(void)
 {
 	char*	string;
 	char	l;
-	char*	result;
+	//char*	result;
 	char*	myresult;
 
-	string = "";
-	l = '\0';
+	string = "Hello there";
+	l = 'o';
 	printf("String is: %s\n", string);
-	result = strchr(string, l);
+	//result = strchr(string, l);
 	myresult = ft_strchr(string, l);
-	printf("Result is: %s\n", result);
+	//printf("Result is: %d\n", result);
 	printf("My result is: %s\n", myresult);
 	return (0);
 }*/
